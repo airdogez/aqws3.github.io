@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Testing on Blog</title>
-    <link>https://aqws3.github.io/categories/testing/</link>
+    <link>/categories/testing/</link>
     <description>Recent content in Testing on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jun 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://aqws3.github.io/categories/testing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/testing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>First Testing Post</title>
-      <link>https://aqws3.github.io/2016/06/11/first-testing-post</link>
+      <link>/2016/06/11/first-testing-post</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://aqws3.github.io/2016/06/11/first-testing-post</guid>
+      <guid>/2016/06/11/first-testing-post</guid>
       <description>&lt;p&gt;Nothing to see here&lt;/p&gt;
 </description>
     </item>
