@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog</title>
-    <link>https://aqws3.github.io/</link>
-    <description>Recent content on Blog</description>
+    <title>Blueprint on Blog</title>
+    <link>https://aqws3.github.io/tags/blueprint/</link>
+    <description>Recent content in Blueprint on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Jul 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://aqws3.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aqws3.github.io/tags/blueprint/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Creating a simple speedometer in UE4</title>
@@ -81,16 +81,6 @@
 
 &lt;p&gt;This material idea was based of the tutorial from Tom Looman circular progress bar tutorial, check it out:
 &lt;a href=&#34;http://www.tomlooman.com/circular-progress-bar-for-umg/&#34;&gt;http://www.tomlooman.com/circular-progress-bar-for-umg/&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>First Testing Post</title>
-      <link>https://aqws3.github.io/2016/06/11/first-testing-post</link>
-      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://aqws3.github.io/2016/06/11/first-testing-post</guid>
-      <description>&lt;p&gt;Nothing to see here&lt;/p&gt;
 </description>
     </item>
     
