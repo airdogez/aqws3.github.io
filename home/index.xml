@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Aqws&#39;s Blog</title>
+    <link>https://aqws3.github.io/home/index.xml</link>
+    <description>Recent content in Homes on Aqws&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io)</copyright>
+    <lastBuildDate>Sat, 11 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://aqws3.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>https://aqws3.github.io/home/about/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://aqws3.github.io/home/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
+
+&lt;p&gt;Andres Revolledo is a student of computer science at Universidad Peruana de Ciencias Aplicadas in Lima, Perú. His main interests are about video game development and computer graphics.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

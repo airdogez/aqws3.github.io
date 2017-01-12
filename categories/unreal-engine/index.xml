@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unreal Engine on Blog</title>
-    <link>https://aqws3.github.io/categories/unreal-engine/</link>
+    <link>https://aqws3.github.io/categories/unreal-engine/index.xml</link>
     <description>Recent content in Unreal Engine on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
     <atom:link href="https://aqws3.github.io/categories/unreal-engine/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>https://aqws3.github.io/2016/07/27/creating-a-simple-speedometer-in-ue4</guid>
-      <description>
-
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;We needed a way of creating a simple visual speedometer for one of our vehicles, since the aesthetic is futuristic, we just needed a simple radial progress bar that represents the speed of the vehicle, this was our final result:&lt;/p&gt;
 
@@ -80,8 +78,7 @@
 &lt;h1 id=&#34;resources&#34;&gt;Resources&lt;/h1&gt;
 
 &lt;p&gt;This material idea was based of the tutorial from Tom Looman circular progress bar tutorial, check it out:
-&lt;a href=&#34;http://www.tomlooman.com/circular-progress-bar-for-umg/&#34;&gt;http://www.tomlooman.com/circular-progress-bar-for-umg/&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;a href=&#34;http://www.tomlooman.com/circular-progress-bar-for-umg/&#34;&gt;http://www.tomlooman.com/circular-progress-bar-for-umg/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

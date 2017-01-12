@@ -2,18 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aqws3.github.io/2016/07/27/creatingaspeedometerue4/</loc>
+    <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aqws3.github.io/home/about/</loc>
+    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://aqws3.github.io/</loc>
     <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://aqws3.github.io/2016/07/27/creating-a-simple-speedometer-in-ue4</loc>
+    <loc>https://aqws3.github.io/tags/blueprint/</loc>
     <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://aqws3.github.io/2016/06/11/first-testing-post</loc>
+    <loc>https://aqws3.github.io/home/</loc>
     <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aqws3.github.io/tags/krita/</loc>
+    <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aqws3.github.io/tags/material/</loc>
+    <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aqws3.github.io/post/</loc>
+    <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aqws3.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aqws3.github.io/tags/ue4/</loc>
+    <lastmod>2016-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
