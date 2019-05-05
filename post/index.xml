@@ -2,13 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Aqws&#39;s Blog</title>
-    <link>https://aqws3.github.io/post/index.xml</link>
+    <link>https://aqws3.github.io/post/</link>
     <description>Recent content in Posts on Aqws&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](//gohugo.io)</copyright>
     <lastBuildDate>Wed, 27 Jul 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://aqws3.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://aqws3.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Creating a simple speedometer in UE4</title>
@@ -18,68 +20,7 @@
       <guid>https://aqws3.github.io/2016/07/27/creatingaspeedometerue4/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;We needed a way of creating a simple visual speedometer for one of our vehicles, since the aesthetic is futuristic, we just needed a simple radial progress bar that represents the speed of the vehicle, this was our final result:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://aqws3.github.io/images/speedometer_final.png&#34; alt=&#34;Speedometer working&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For this tutorial we will just explain how the circular bar was accomplished.&lt;/p&gt;
-
-&lt;h1 id=&#34;textures&#34;&gt;Textures&lt;/h1&gt;
-
-&lt;p&gt;For the material 2 textures were needed, one that defines the final shape of the progress bar and one for the opacity mask, using Krita we just used the gradient tool with a conical shape to generate the mask and made the shape of the final bar how we wanted it, remember that black will have an opacity of 0% and white 100%. For both textures we need to set the sRGB off and tell it to not use mipmaps.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://aqws3.github.io/images/texture_config.png&#34; alt=&#34;Texture configuration&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can get the textures here:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;Shape&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mask&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;img src=&#34;https://aqws3.github.io/images/T_Speedometer3.png&#34; alt=&#34;Shape&#34; /&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;img src=&#34;https://aqws3.github.io/images/T_Gradient_Speedometer3.png&#34; alt=&#34;Mask&#34; /&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;These are just some samples for this tutorial and not the ones used in the final product.&lt;/p&gt;
-
-&lt;h1 id=&#34;material&#34;&gt;Material&lt;/h1&gt;
-
-&lt;p&gt;For the material we need 2 Parameters, a Scalar &lt;strong&gt;Alpha&lt;/strong&gt; that will represent the percentage of the bar and a Vector &lt;strong&gt;Color&lt;/strong&gt; that will be our base color, we will be also using the Mask texture for the gradient in the color. The Material blend mode must be set to Translucent for the Opacity to work. Finally the textures Sample Type must be set to Linear Color for them to work.&lt;/p&gt;
-
-&lt;p&gt;The full material is as follows:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://aqws3.github.io/images/speedometer_material.png&#34; alt=&#34;Speedometer Material&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;blueprint&#34;&gt;Blueprint&lt;/h1&gt;
-
-&lt;p&gt;To use the material we will have to apply it to a simple plane mesh included with UE4 and create the material dynamically, for this we will have to create a static mesh in our Blueprint, assign it the mesh, we can assign it the material right now to preview it but will be overriding it later in the Begin play node.&lt;/p&gt;
-
-&lt;p&gt;In the Begin node of the blueprint we will initialize the Material and the Color, we will need a variable that will hold the dynamic material reference:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://aqws3.github.io/images/speedometer_beginplay.png&#34; alt=&#34;Speedometer Begin Play&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we need something to update the &lt;strong&gt;Alpha&lt;/strong&gt; parameter of the material, because this is a vehicle we will use the ratio between the speed and max speed of the vehicle, we will also introduce small random float that will simulate the error in the speedometer visualization. Now just set the final value to the Scalar Parameter Value Node of your dynamic material in the Event Tick.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://aqws3.github.io/images/speedometer_eventtick.png&#34; alt=&#34;Speedometer Event Tick&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h1&gt;
-
-&lt;p&gt;Applying the material to a static mesh might not be the best solution for this simple effect, using a Material Billboard might be more suitable for this case, but we didn&amp;rsquo;t want it to always face the camera. We also didn&amp;rsquo;t use a widget for this UI element because we needed the Emissive Color from the material to give the glow effect, which wasn&amp;rsquo;t available if the material type was set to User Interface.&lt;/p&gt;
-
-&lt;p&gt;Hopefully this helps someone else in making some HUD elements and learning how to use the materials, a lot of variations can be achieved with just changing some nodes and one can just spent a lot of time just experimenting.&lt;/p&gt;
-
-&lt;h1 id=&#34;resources&#34;&gt;Resources&lt;/h1&gt;
-
-&lt;p&gt;This material idea was based of the tutorial from Tom Looman circular progress bar tutorial, check it out:
-&lt;a href=&#34;http://www.tomlooman.com/circular-progress-bar-for-umg/&#34;&gt;http://www.tomlooman.com/circular-progress-bar-for-umg/&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;We needed a way of creating a simple visual speedometer for one of our vehicles, since the aesthetic is futuristic, we just needed a simple radial progress bar that represents the speed of the vehicle&lt;/p&gt;</description>
     </item>
     
   </channel>
